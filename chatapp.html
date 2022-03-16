@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="chatapp.css">
+        <title>Chat</title>
+    </head>
+    <body>
+    <div class="container">
+    <div class="header">
+    <span class="chatapp">ChatApp</span>
+    <span class="search"><i class="fa fa-search"></i></span><br />
+    
+    <div class="list">
+    <span class="chats">CHATS</span>
+    </div>
+    </div>
+    
+    <div class="the_chats">
+    <div class="chats_container">
+    <ul class="ul_chats">
+    <li class="li_chats1">
+    <button class="icon1"></button>
+    <div class="person1">Name 1</div>
+    <span class="time_msgt">12:00 AM</span><br />
+    <div class="msg1">/message/</div><div class="msgcol1">2</div>
+    </li>
+    
+    <li class="li_chats2">
+    <button class="icon2"></button>
+    <div class="person2">Name 2</div>
+    <span class="time_msg1">12:29 AM</span><br />
+    <div class="msg2">/message/</div><div class="msgcol2">1</div>
+    </li>
+    
+    <li class="li_chats3">
+    <button class="icon3"></button>
+    <div class="person3">Name 3</div>
+    <span class="time_msg2">11:36 PM</span><br />
+    <div class="msg3">/message/</div><div class="msgcol3">1</div>
+    </li>
+    
+    <li class="li_chats4">
+    <button class="icon4"></button>
+    <div class="person4">Name 4</div>
+    <span class="time_msg3">10:01 PM</span><br />
+    <div class="msg4">/message/</div><div class="msgcol4">1</div>
+    </li>
+    
+    <li class="li_chats5">
+    <button class="icon5"></button>
+    <div class="person5">Name 5</div>
+    <span class="time">Yesterday</span><br />
+    <div class="msg5">/message/</div>
+    </li>
+    
+    <li class="li_chats6">
+    <button class="icon6"></button>
+    <div class="person6">Name 6</div>
+    <span class="time">Yesterday</span><br />
+    <div class="msg6">/message/</div>
+    </li>
+    
+    <li class="li_chats7">
+    <button class="icon7"></button>
+    <div class="person7">Name 7</div>
+    <span class="time">Yesterday</span><br />
+    <div class="msg7">/message/</div>
+    </li>
+    
+    <li class="li_chats8">
+    <button class="icon8"></button>
+    <div class="person8">Name 8</div>
+    <span class="time">Yesterday</span><br />
+    <div class="msg8">/message/</div>
+    </li>
+    
+    <li class="li_chats9">
+    <button class="icon9"></button>
+    <div class="person9">Name 9</div>
+    <span class="time">2:00 pm</span><br />
+    <div class="msg9">/message/</div>
+    </li>
+    
+    <li class="li_chats10">
+    <button class="icon10"></button>
+    <div class="person10">Name 10</div>
+    <span class="time">1:45 pm</span><br />
+    <div class="msg10">/message/</div>
+    </li>
+    
+    <li class="li_chats11">
+    <button class="icon11"></button>
+    <div class="person11">Name 11</div>
+    <span class="time">12:00 am</span><br />
+    <div class="msg11">/message/</div>
+    </li>
+    
+    <li class="li_chats12">
+    <button class="icon12"></button>
+    <div class="person12">Name 12</div>
+    <span class="time">4:00 pm</span><br />
+    <div class="msg12">/message/</div>
+    </li>
+    
+    <li class="li_chats13">
+    <button class="icon13"></button>
+    <div class="person13">Name 13</div>
+    <span class="time">6:20 pm</span><br />
+    <div class="msg13">/message/</div>
+    </li>
+    
+    <li class="li_chats14">
+    <button class="icon14"></button>
+    <div class="person14">Name 14</div>
+    <span class="time">11:40 am</span><br />
+    <div class="msg14">/message/ </div>
+    </li>
+    
+    <li class="li_chats15">
+    <button class="icon15"></button>
+    <div class="person15">Name 15</div>
+    <span class="time">8:00 pm</span><br />
+    <div class="msg15">/message/</div>
+    </li>
+
+    </ul>
+    </div>
+    </div>
+    </div>
+    
+    <div class="settings_container">
+    <div class="settings_header">
+    <span class="settings_back"><i class="fa fa-arrow-left"></i></span>
+    <span class="setting_name">Settings</span>
+    </div>
+    
+    <div class="settings_li">
+    <div class="settings_profile"></div>
+    <div class="settings_profile_name">Name</div>
+
+    </div>
+    
+    <ul class="settings_ul">
+    
+    <li><div class="key"><i class="fa fa-key"></i></div> <div class="key_name">Account</div><br /><div class="key_description"></div></li>
+    <li><div class="key"><i class="fa fa-envelope"></i></div> <div class="key_name">Chats</div><br /><div class="key_description">chat history</div></li>
+    <li><div class="key"><i class="fa fa-bell"></i></div> <div class="key_name">Notifications</div><br /><div class="key_description"></div></li> 
+    <li><div class="key"><i class="fa fa-users"></i></div> <div class="key_name">Add contact</div></li>
+    </ul>
+    
+    </div> 
+   
+    <center>
+    <div class="iconsp">
+    <div class="iconsp_items">
+    <span class="iconsp_send"><i class="fa fa-phone"></i></span>  
+    <span class="iconsp_send"><i class="fa fa-info-circle"></i></span>  
+    </div>
+    </div>
+    </center> 
+    <div class="invi">    
+    </div>
+    
+    <div class="real_chat">
+    <div class="real_chat_header">
+    
+    <span class="real_chat_back">
+    <i class="fa fa-arrow-left"></i>
+    </span>
+    
+    <div class="real_chat_icon"></div>
+    
+    <div class="real_chat_name">User Name</div>
+    
+    <div class="real_chat_calls">
+    <i class="fa fa-phone"></i>
+    </div>
+    <div class="real_chat_calls2">
+    </div>
+    <div class="real_chat_online">online</div>
+    </div>
+    
+    <div class="real_chat_input">
+    <input type="text" placeholder="Type a Message..." id="message">
+    <span class="real_submit"><i class="fa fa-send"></i></span>
+    <div class="real_chat_items">
+    </div>
+    </div>
+    <ul class="conversation">
+    <div id="rchats"><span class="rechats"></span><span class="rtime"></span></div>
+    
+    </ul>
+    <div class="real_chat_send">
+    <i class="zmdi zmdi-mail-send"></i>
+    </div>
+    </div>
+    <audio controls style="display:none;" id="audio">
+    <source id="audio-source"
+     src="https://devnasfam.000webhostapp.com/rec.mp3" type="audio/mpeg">
+     <audio controls style="display:none;" id="audio2">
+    <source id="audio-source"
+     src="https://devnasfam.000webhostapp.com/sen.mp3" type="audio/mpeg">
+    <script>
+    $(".container").hide();
+    $(".ellip").hide();
+    window.onload = function(){
+    $(".container").show();
+    $(".load_screen").fadeOut(500);
+    $(".ellip").show();
+    
+    $(".fa-phone").click(function(){
+    setTimeout(function(){
+    navigator.vibrate&&navigator.vibrate(60);
+    }, 50);
+    });
+    var span = document.querySelector(".time_msgt");
+    var date = new Date();
+    var HH = date.getHours();
+    var MM = date.getMinutes();
+    MM = (MM < 10) ? "0" + MM : MM;
+    var am_pm = "PM";
+    if (HH==0){
+        am_pm = "PM";
+    }else if (HH>=12){
+        am_pm = "PM";
+    }
+    else{
+        am_pm = "AM";
+    }
+    if (HH>12){
+        HH=HH-12;
+    }else{
+        HH=HH;
+    }
+    var TT = HH+":"+MM+" "+am_pm;
+    span.innerHTML=TT;
+    }
+        
+    $(".real_chat_send").click(function(){
+    var d = new Date();
+    var h = d.getHours(); 
+ var t = d.getMinutes();
+  h = (h <10) ? "0" + h : h;
+ t = (t <10) ? "0" + t : t;
+ if(h>12){
+    h=h-12;
+ }else{
+    h=h;
+ }
+ time= h+":"+t;
+ 
+    var val = $("#message").val();
+    if (val!==""){
+    var elem = $("  <div class='re' id='schat'><span class='sechat'>"+val+"</span> <span class='stime'>"+time+"<i class='material-icons tick'style='color:#aaa;'>done_all</i></span></div> ");
+    $(".conversation").append(elem);
+    $("#message").val("");
+    document.getElementById("audio2").play();
+
+    setTimeout(function(){
+        document.getElementById("audio").play();
+    },1950);
+    
+    setTimeout(function(){
+  $(".tick").css("color","#4fc3f7");
+  $(".real_chat_online").text("typing...").css("color","#3d7");
+   setTimeout(function(){
+   if (val=="msg"){
+       $(".conversation").append("<div class='re' id='rchat'><span class='rechat'>Hello</span> <span class='rtime'>"+time+"</span></div>");$(".conversation").scrollTop($(".conversation")[0].scrollHeight);
+       navigator.vibrate(100);
+       $(".real_chat_online").text("online").css("color","#fff");
+   }else if (val=="msg"){
+       $(".conversation").append("<div class='re' id='rchat'><span class='rechat'>Hi</span> <span class='rtime'>"+time+"</span></div>");$(".conversation").scrollTop($(".conversation")[0].scrollHeight);
+       navigator.vibrate(100);
+       $(".real_chat_online").text("10 mins ago").css("color","#fff");
+   }else if (val=="msg"){
+       $(".conversation").append("<div class='re' id='rchat'><span class='rechat'>/message/</span> <span class='rtime'>"+time+"</span></div>");$(".conversation").scrollTop($(".conversation")[0].scrollHeight);
+       navigator.vibrate(100);
+       $(".real_chat_online").text("15 mins ago").css("color","#fff");
+   }else if (val=="msg"){
+       $(".conversation").append("<div class='re' id='rchat'><span class='rechat'>/message/</span> <span class='rtime'>"+time+"</span></div>");$(".conversation").scrollTop($(".conversation")[0].scrollHeight);
+       navigator.vibrate(100);
+       $(".real_chat_online").text("30 mins ago").css("color","#fff");
+   }else if (val=="msg"){
+       $(".conversation").append("<div class='re' id='rchat'><span class='rechat'>/message/</span> <span class='rtime'>"+time+"</span></div>");$(".conversation").scrollTop($(".conversation")[0].scrollHeight);
+       navigator.vibrate(900);
+       $(".real_chat_online").text("1 Hour ago").css("color","#fff");
+   }else{
+       $(".conversation").append("<div class='re' id='rchat'><span class='rechat'> /message/</span> <span class='rtime'>"+time+"</span></div>");$(".conversation").scrollTop($(".conversation")[0].scrollHeight);
+       navigator.vibrate(100);
+       $(".real_chat_online").text("yesterday").css("color","#fff");
+    }
+   },2000);},1000);
+    }
+    });
+    
+    
+    var msg = document.querySelector("#message");
+   
+    var send = document.querySelector(".real_chat_send");
+    send.style.display="none";
+    
+    msg.addEventListener("input", myFun);
+    function myFun(){
+     if(msg.value.length>0){
+         mic.style.display="none";
+         send.style.display="block";
+         $(".real_cam").hide(200);
+         $(".real_chat_items").css({"margin-top":"0px", "margin-right":"10px"});
+     }else if(msg.value.length>=12){
+         return false;
+     }
+     else{
+         send.style.display="none";
+         mic.style.display="block";
+         $(".real_cam").show(200);
+         $(".real_chat_items").css({"margin-top":"-30px", "margin-right":"0px"});
+     }
+    }
+
+    $("#menu").toggle();
+    $(".ellip").click(function(){
+    $("#menu").toggle(300);
+    $(".container").click(function(){
+    $("#menu").hide(200);
+    });
+    });
+    $(".status").click(function(){
+    $(".chats_container").hide(300);
+    $(".status_container").show(300);
+    $(".calls_container").hide(300);
+    $("#menu").css({"height":"80px"});
+    $(".status").css({"border-bottom":"2px solid #fff"});
+    $(".calls").css({"border-bottom":"0px"});
+    $(".chats").css({"border-bottom":"0px"});
+    $(".l2").hide();
+    $(".l4").hide();
+    $(".l3").hide();
+    $(".l1").html("Status privacy");
+    });
+    $(".chats").click(function(){
+    $(".calls_container").hide(300);
+    $(".status_container").hide(300);
+    $(".chats_container").show(300);
+    $("#menu").css({"height":"210px"});
+    $(".chats").css({"border-bottom":"2px solid #fff"});
+    $(".calls").css({"border-bottom":"0px"});
+    $(".status").css({"border-bottom":"0px"});
+    $(".l2").show();
+    $(".l4").show();
+    $(".l3").show();
+    $(".l1").html("New Group");
+    });
+    $(".calls").click(function(){
+    $(".calls_container").show(300);
+    $(".status_container").hide(300);
+    $(".chats_container").hide(300);
+    $("#menu").css({"height":"50px"});
+    $(".l2").hide();
+    $(".l4").hide();
+    $(".l3").hide();
+    $(".l1").html("<a href='https:///wa.me/2349017872620'>Contact me</a>");
+    $(".l5").show();
+    $(".calls").css({"border-bottom":"2px solid #fff"});
+    $(".status").css({"border-bottom":"0px"});
+    $(".chats").css({"border-bottom":"0px"});
+    });
+    
+    
+    //SETTINGS
+    $(".settings_container").hide();
+    $(".l5").click(function(){
+    $(".real_chat").hide();
+     $(".container").hide(400);
+     $(".settings_container").slideToggle(300);
+     $("#menu").fadeToggle(300);
+     $(".ellip").hide();
+    });
+    $(".settings_back").click(function(){
+    $(".settings_container").slideToggle(400);
+        $(".container").show(600);
+     $(".ellip").show();
+    });
+    
+$(".camera_container").hide();
+    $(".camera").click(function(){
+     $(".container").fadeToggle(400);
+     $(".camera_container").show();
+     $("#menu").hide();
+     $(".ellip").hide();
+    });
+    $(".camera_back").click(function(){
+    $(".camera_container").fadeToggle(400);
+        $(".container").fadeToggle(500);
+     $(".ellip").show();
+    });
+    
+    $(".iconsp").hide();
+    $(".invi").hide();
+    $(".icon1").click(function(){
+    $(".iconsp").css({"border-radius":"0px", "background":"url(icon.jpg)", "background-size":"cover"});
+    $(".iconsp").show();
+    $(".invi").show();
+    $(".invi").click(function(){
+    $(".iconsp").hide();
+    $(".invi").hide();
+    });
+    });
+    
+    
+    
+    $(".icon2").click(function(){
+    $(".iconsp").css({"border-radius":"0px", "background":"url(icon.jpg)", "background-size":"cover"});
+    $(".iconsp").show();
+    $(".invi").show();
+    $(".invi").click(function(){
+    $(".iconsp").hide();
+    $(".invi").hide();
+    });
+    });
+    
+    $(".icon3").click(function(){
+    $(".iconsp").css({"border-radius":"0px", "background":"url(icon.jpg)", "background-size":"cover"});
+    $(".iconsp").show();
+    $(".invi").show();
+    $(".invi").click(function(){
+    $(".iconsp").hide();
+    $(".invi").hide();
+    });
+    });
+    
+    $(".icon4").click(function(){
+    $(".iconsp").css({"border-radius":"0px", "background":"url(icon.jpg)", "background-size":"cover"});
+    $(".iconsp").show();
+    $(".invi").show();
+    $(".invi").click(function(){
+    $(".iconsp").hide();
+    $(".invi").hide();
+    });
+    });
+    
+    $(".icon5").click(function(){
+    $(".iconsp").css({"border-radius":"0px", "background":"url(icon.jpg)", "background-size":"cover"});
+    $(".iconsp").show();
+    $(".invi").show();
+    $(".invi").click(function(){
+    $(".iconsp").hide();
+    $(".invi").hide();
+    });
+    });
+    
+    
+    
+    $(".icon6").click(function(){
+    $(".iconsp").css({"border-radius":"0px", "background":"url(icon.jpg)", "background-size":"cover"});
+    $(".iconsp").show();
+    $(".invi").show();
+    $(".invi").click(function(){
+    $(".iconsp").hide();
+    $(".invi").hide();
+    });
+    });
+    
+    
+    
+    $(".icon7").click(function(){
+    $(".iconsp").css({"border-radius":"0px", "background":"url(icon.jpg)", "background-size":"cover"});
+    $(".iconsp").show();
+    $(".invi").show();
+    $(".invi").click(function(){
+    $(".iconsp").hide();
+    $(".invi").hide();
+    });
+    });
+    
+    
+    
+    
+    $(".icon8").click(function(){
+    $(".iconsp").css({"border-radius":"0px", "background":"url(icon.jpg)", "background-size":"cover"});
+    $(".iconsp").show();
+    $(".invi").show();
+    $(".invi").click(function(){
+    $(".iconsp").hide();
+    $(".invi").hide();
+    });
+    });
+    
+    
+    $(".icon9").click(function(){
+    $(".iconsp").css({"border-radius":"0px", "background":"url(icon.jpg)", "background-size":"cover"});
+    $(".iconsp").show();
+    $(".invi").show();
+    $(".invi").click(function(){
+    $(".iconsp").hide();
+    $(".invi").hide();
+    });
+    });
+    
+    
+    $(".icon10").click(function(){
+    $(".iconsp").css({"border-radius":"0px", "background":"url(icon.jpg)", "background-size":"cover"});
+    $(".iconsp").show();
+    $(".invi").show();
+    $(".invi").click(function(){
+    $(".iconsp").hide();
+    $(".invi").hide();
+    });
+    });
+    
+    
+    $(".icon11").click(function(){
+    $(".iconsp").css({"border-radius":"0px", "background":"url(icon.jpg)", "background-size":"cover"});
+    $(".iconsp").show();
+    $(".invi").show();
+    $(".invi").click(function(){
+    $(".iconsp").hide();
+    $(".invi").hide();
+    });
+    });
+    
+    $(".icon12").click(function(){
+    $(".iconsp").css({"border-radius":"0px", "background":"url(icon.jpg)", "background-size":"cover"});
+    $(".iconsp").show();
+    $(".invi").show();
+    $(".invi").click(function(){
+    $(".iconsp").hide();
+    $(".invi").hide();
+    });
+    });
+    
+    $(".icon13").click(function(){
+    $(".iconsp").css({"border-radius":"0px", "background":"url(icon.jpg)", "background-size":"cover"});
+    $(".iconsp").show();
+    $(".invi").show();
+    $(".invi").click(function(){
+    $(".iconsp").hide();
+    $(".invi").hide();
+    });
+    });
+    
+    $(".icon14").click(function(){
+    $(".iconsp").css({"border-radius":"0px", "background":"url(icon.jpg)", "background-size":"cover"});
+    $(".iconsp").show();
+    $(".invi").show();
+    $(".invi").click(function(){
+    $(".iconsp").hide();
+    $(".invi").hide();
+    });
+    });
+    
+    $(".icon15").click(function(){
+    $(".iconsp").css({"border-radius":"0px", "background":"url(icon.jpg)", "background-size":"cover"});
+    $(".iconsp").show();
+    $(".invi").show();
+    $(".invi").click(function(){
+    $(".iconsp").hide();
+    $(".invi").hide();
+    });
+    });
+    
+    
+
+    
+    $(".status_down2").hide();
+    $(".view_status_container").hide();
+    $(".li_status1").click(function(){
+    $(".view_status_container").show();
+    $(".view_status_container").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".view_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".status_down2").show();
+    $(".status_down").hide();
+    $(".view_name").text("My status");
+    setTimeout(function(){
+    $(".view_status_container").hide();
+    $(".status_down").show();
+    }, 8000);
+    });
+    $(".view_back").click(function(){
+    $(".view_status_container").hide();
+    });
+    
+    $(".li_status9").click(function(){
+    $(".view_status_container").show();
+    $(".view_status_container").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".view_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".status_down2").hide();
+    $(".status_down").show();
+    $(".view_name").text("Name");
+    setTimeout(function(){
+    $(".view_status_container").hide();
+    $(".status_down").show();
+    }, 8000);
+    });
+    $(".view_back").click(function(){
+    $(".view_status_container").hide();
+    });
+    
+var d = new Date();
+var h = d.getHours(); 
+ var t = d.getMinutes();
+  h = (h <10) ? "0" + h : h;
+ t = (t <10) ? "0" + t : t;
+ if(h>12){
+    h=h-12;
+ }else{
+    h=h;
+ }
+ time= h+":"+t;
+    $(".real_chat").hide();
+    $(".person1").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 1");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".time_msgt").css({"color":"dimgrey"});
+    $(".msgcol1").hide();
+    $(".rtime").text(time);
+    });
+    
+    $(".msg1").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 1");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".time_msgt").css({"color":"dimgrey"});
+    $(".msgcol1").hide();
+    $(".rtime").text(time);
+    });
+    
+    $(".person2").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("name 2");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".time_msg1").css({"color":"dimgrey"});
+    $(".msgcol2").hide();
+    $(".rtime").text(time);
+    });
+    
+    $(".msg2").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 2");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".time_msg1").css({"color":"dimgrey"});
+    $(".msgcol2").hide();
+    $(".rtime").text(time);
+    });
+    
+ 
+    $(".person3").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 3");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".time_msg2").css({"color":"dimgrey"});
+    $(".msgcol3").hide();
+    $(".rtime").text(time);
+    });
+    
+    $(".msg3").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 3");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".time_msg2").css({"color":"dimgrey"});
+    $(".msgcol3").hide();
+    $(".rtime").text(time);
+    });
+    
+    $(".person4").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 4");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".time_msg3").css({"color":"dimgrey"});
+    $(".msgcol4").hide();
+    $(".rtime").text(time);
+    });
+    
+    $(".msg4").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 4");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".time_msg3").css({"color":"dimgrey"});
+    $(".msgcol4").hide();
+    $(".rtime").text(time);
+    });
+    
+    $(".person5").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 5");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("Yesterday");
+    $(".rtime").text(time);
+    });
+    
+    $(".msg5").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 5");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("Yesterday");
+    $(".rtime").text(time);
+    });
+    
+    $(".person6").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 6");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("Yesterday");
+    $(".rtime").text(time);
+    });
+    
+    $(".msg6").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 6");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("Yesterday");
+    $(".rtime").text(time);
+    });
+    
+    $(".person7").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 7");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("Yesterday");
+    $(".rtime").text(time);
+    });
+    
+    $(".msg7").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 7");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("Yesterday");
+    $(".rtime").text(time);
+    });
+    
+    $(".person8").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 8");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("Yesterday");
+    $(".rtime").text(time);
+    });
+    
+    $(".msg8").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 8");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("Yesterday");
+    $(".rtime").text(time);
+    });
+    
+
+    $(".person9").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 9");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("December");
+    $(".rtime").text(time);
+    });
+    
+    $(".msg9").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 9");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("December");
+    $(".rtime").text(time);
+    });
+    
+    $(".person10").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 10");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("December");
+    $(".rtime").text(time);
+    });
+    
+    $(".msg10").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 10");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("December");
+    $(".rtime").text(time);
+    });
+      
+    $(".person11").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 11");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("December");
+    $(".rtime").text(time);
+    });
+    
+    $(".msg11").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 11");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("December");
+    $(".rtime").text(time);
+    });
+    
+    $(".person12").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 12");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("December");
+    $(".rtime").text(time);
+    });
+    
+    $(".msg12").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 12");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("December");
+    $(".rtime").text(time);
+    });
+    
+    $(".person13").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 13");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("December");
+    $(".rtime").text(time);
+    });
+    
+    $(".msg13").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 13");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("December");
+    $(".rtime").text(time);
+    });
+    
+    $(".person14").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 14");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("December");
+    $(".rtime").text(time);
+    });
+    
+    $(".msg14").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 14");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("December");
+    $(".rtime").text(time);
+    });
+
+    $(".person15").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 15");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("December");
+    $(".rtime").text(time);
+    });
+    
+    $(".msg15").click(function(){
+    $(".real_chat").show();
+    $(".real_chat_icon").css({"background":"url(icon.jpg)", "background-size":"cover"});
+    $(".real_chat_name").text("Name 15");
+    $(".container").hide();
+    $(".rechats").text("/message/");
+    $(".real_today").text("December");
+    $(".rtime").text(time);
+    });
+    
+    $(".real_chat").click(function(){
+    $("#menu").hide();
+    });
+    $(".real_chat_back").click(function(){
+    $("#menu").hide();
+    $("#schat").remove();
+    $("#rchat").remove();
+    $(".real_chat").hide();
+    $(".container").show();
+    });
+    </script>
+    </body>
+</html>
